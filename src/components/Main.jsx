@@ -5,7 +5,7 @@ import About from './mini-components/About'
 import Products from './mini-components/Products'
 import Impact from './mini-components/Impact'
 import Contact from './mini-components/Contact'
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 
 const Main = () => {
   return (
