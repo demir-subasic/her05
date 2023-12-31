@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProductItem.css';
 
-const ProductItem = ({ id, name, description, price, image }) => {
+const ProductItem = ({  name, description, price, image }) => {
   return (
     <div className="product-item">
       <img src={image} alt={name} />

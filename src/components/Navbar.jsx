@@ -18,11 +18,11 @@ const Navbar = () => {
       </div>
       </Link>
       <ul className={`menu ${menuActive ? 'active' : ''}`}>
-        <li><Link to="/"><a>Home</a></Link></li>
-        <li><Link to="/about"><a>About</a></Link></li>
-        <li><Link to="/products"><a>Products</a></Link></li>
-        <li><Link to="/impact"><a>Impact</a></Link></li>
-        <li><Link to="/contact"><a>Contact</a></Link></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/products">Products</Link></li>
+        <li><Link to="/impact">Impact</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
       </ul>
       <div className="user-icon" onClick={toggleMenu}>&#9776;</div>
     </div>
