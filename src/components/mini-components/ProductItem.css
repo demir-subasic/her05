@@ -2,6 +2,8 @@
     border: 1px solid #ddd;
     padding: 20px;
     text-align: center;
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
   }
   
   .product-item img {
@@ -13,12 +15,12 @@
   .product-item h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
   }
   
   .product-item p {
     margin-bottom: 10px;
-    color: black;
+    color: rgb(129, 129, 129);
   }
   
   .product-item p:last-child {

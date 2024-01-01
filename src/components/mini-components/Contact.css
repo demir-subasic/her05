@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://img.freepik.com/premium-photo/mother-nature-provides-cropped-portrait-attractive-young-female-farmer-carrying-crate-fresh-produce_590464-10644.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1702857600&semt=ais');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://www.eos-intelligence.com/wp-content/uploads/2020/09/Agritech-in-Africa-Cultivating-Opportunities-for-ICT-in-Agriculture.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -35,7 +35,7 @@ form {
     margin-top: 10px;
     border-radius: 10px;
     border: 1px solid #023d23;
-    background-color: #202d2492;
+    background-color: #111e1592;
     backdrop-filter: blur(5px);
     width: 100%;
     padding: 8px;

@@ -7,7 +7,7 @@ const ProductItem = ({  name, description, price, image }) => {
       <img src={image} alt={name} />
       <h3>{name}</h3>
       <p>{description}</p>
-      <p>${price.toFixed(2)}</p>
+      <p>${price}</p>
     </div>
   );
 };
