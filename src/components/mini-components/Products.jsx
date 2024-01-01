@@ -75,6 +75,7 @@ const Products = () => {
     product.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+
   return (
     <div className="products-container">
       <input

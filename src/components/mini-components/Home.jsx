@@ -1,10 +1,20 @@
 import React from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
+import { useSpring, animated } from 'react-spring';
 
 const Home = () => {
+
+  const fadeIn = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { duration: 500 },
+  });
+
+
+
   return (
-    <div className="home-container">
+    <animated.div style={fadeIn} className="home-container">
       <div className='section-div'>
       <section className="big-idea">
         <h2>Our Big Idea</h2>
@@ -35,7 +45,7 @@ const Home = () => {
       </div>
 
       <Link to="/about"><button className="read-more">Read More</button></Link>
-    </div>
+    </animated.div>
   );
 };
 

@@ -8,7 +8,7 @@ const About = () => {
   const fadeIn = useSpring({
     opacity: 1,
     from: { opacity: 0 },
-    config: { duration: 800 },
+    config: { duration: 500 },
   });
 
 

@@ -1,9 +1,19 @@
 import React from 'react';
 import './Impact.css';
+import { useSpring, animated } from 'react-spring';
 
 const Impact = () => {
+
+  const fadeIn = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { duration: 500 },
+  });
+
+
+
   return (
-    <div className="impact-container">
+    <animated.div style={fadeIn} className="impact-container">
       <section className="impact-section">
         <h3>Doer-at-scale</h3>
         <ul>
@@ -53,7 +63,7 @@ const Impact = () => {
           <li>By offering a flexible Buy Now, Pay Later system, which allows farmers to make an initial payment of no more than 10% of the total package cost, the initiative is CHEAP ENOUGH for the farmers to afford.</li>
         </ul>
       </section>
-    </div>
+    </animated.div>
   );
 };
 

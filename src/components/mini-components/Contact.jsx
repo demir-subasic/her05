@@ -1,7 +1,17 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import { useSpring, animated } from 'react-spring';
 
 const Contact = () => {
+
+  const fadeIn = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { duration: 500 },
+  });
+
+
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -58,7 +68,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='contact-form'>
+    <animated.div style={fadeIn} className='contact-form'>
       <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
         <label>
@@ -106,7 +116,7 @@ const Contact = () => {
         </label>
         <button type="submit">Submit</button>
       </form>
-    </div>
+    </animated.div>
   );
 };
 
