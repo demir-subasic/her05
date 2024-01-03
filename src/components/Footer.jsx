@@ -17,7 +17,7 @@ const Footer = () => {
 
     const unlisten = () => navigate(handleScrollToTop);
 
-    unlisten(); // Odmah pozovi unlisten kako bi se registrovao handleScrollToTop
+    unlisten(); 
 
     return unlisten;
   }, [navigate]);
